@@ -25,4 +25,20 @@ Mean of embedding features is at 0 and standard deviation is centered around 0.5
 
 Target value is highly imbalanced, as number of rows corresponding to AI generated text are quite less in the entire dataset.
 
+**3. Comparison of word count between Humand and AI generated texts:** <br>
+
+<div align="center"><img width="521" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/f707070c-6953-4bb4-a4d6-4943bc51100c"></div> <br>
+
+Human generates sentences are slightly longer than AI generated ones. However, there doesn't seem to be lot of seperation between both the distributions.
+
+**4. Comparison of Punctuation count between Humand and AI generated texts:** <br>
+
+<div align="center"><img width="492" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/7c51af02-43eb-4226-94cf-980e02502eb3"></div> <br>
+
+Punctuation count used by Humans are widely distributed than that of AI generated texts.
+
+**5. Top 2 Principal Components:** <br>
+
+
+
 
