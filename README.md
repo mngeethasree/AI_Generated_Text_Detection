@@ -96,7 +96,7 @@ Comparison of Confusion Matrix for Train and Test Datasets
 ## Model Interpretation:
 Although neural network is not directly interpretable, we can use techniques like permutation importance to estimate the importance of features. After running permutation importance, results are as follows. <br>
 
-<img width="363" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/35752ee3-0fee-4d5d-8d3c-7fbb81a42d0b"> <br>
+<div align="center"><img width="363" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/35752ee3-0fee-4d5d-8d3c-7fbb81a42d0b"></div> <br>
 
 word_count, word_plus_punc features emerge as top 2 features indicating that the impact on model performance is highest by changing these two features. <br>
 
