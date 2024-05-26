@@ -39,6 +39,43 @@ Punctuation count used by Humans are widely distributed than that of AI generate
 
 **5. Top 2 Principal Components:** <br>
 
+We can utilzie PCA to reduce 768 dimensional vector to top 2 principal components that can explain almost 25% of variance in the actual data and then visualize these principal components for Human vs AI generated texts. <br>
+
+<img width="488" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/8b005354-60bd-4319-8870-a154a6d39644"> <br>
+
+Data points for both the classes are mostly overlapping and there is no clear seperation between both the classes. However, this is expected, as top 2 principal components alone would not be sufficient enough for the classification model to be able to clearly distibguish between both the classes. <br>
+
+
+**6. t-SNE visualization :** <br>
+
+Using t-SNE to visualize 768 dimensional embeddings in 2 dimensions for both the classes. <br>
+
+<img width="483" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/d50db5ed-cbfb-4465-ab58-594994ddef20"> <br>
+
+## Feature Engineering:
+
+Since the 768 embedding features are not directly interpretable, they cannot be utilized to create any new features that can help in the classification problem. We have created three new featuers from word_count and punc_num features. <br>
+
+**1. word_per_punc:** This feature is calculated by dividing word count by punctuation count. It represents average number of words used per each punctuation character. A small epsilon is added in the denominator as it is possible to have a sentence with zero punctuation characters. <br>
+**2. punc_per_word:** This feature is calculated by dividing punctuation count by word count. It represents average number of punctuation characters used per word. An epsilon is not required here as word count cannot be zero. <br>
+**3. word_plus_punc:** This feature is calculated by sum of word count and punctuation character count.
+
+## Train Test Split:
+Used 90-10 train-test split on the entire data.
+
+## Data Balancing:
+Since the target variable is highly imbalanced, balancing both the classes before training the model could help in better classification. After trying out various techniques like SMOTE, SMOTETomek, Random OverSampler, Random UnderSampler from imblearn, the performance metric doesn't seem to improve with the balanced data.
+
+## Standard Scaler:
+Standard scaling all the features before modeling to normalize ranges of all the features to have zero mean and unit standard deviation.
+
+## Dimensionality Reduction on 768 D embedding features
+After applying dimensionality reduction techniques like PCA and SVD to project embeddings to lower dimensional space explaining 95% of original variance, there doesnt seem to be any improvement in performance metric. 
+
+## Model Architecture: 
+Generated a model architecture using 3 hidden layers and an output layer 
+
+
 
 
 
