@@ -86,4 +86,20 @@ Upon fitting the model, the training process stopped after 50 iterations when te
 <div align="center"><img width="335" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/62202e2a-1ef5-4981-b194-0dd0a59015c8"> 
 <img width="331" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/016c97a2-b00e-4d25-aa51-d5dacf9e5516"></div> <br>
 
+Upon examining the learning curves for accuracy and loss, it can be observed that the seperation between train and validation metrics slowly starts to decrease as training process continues, and then increases after certain number of epochs. However, since early stopping callback is used, best weights are automatically stored in the model.
+
+## Final Model Performance metrics:
+
+Comparison of Confusion Matrix for Train and Test Datasets
+<div align="center"><img width="473" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/474d3a19-51fa-46a0-a3c9-00375e005973"></div> <br>
+
+## Model Interpretation:
+Although neural network is not directly interpretable, we can use techniques like permutation importance to estimate the importance of features. After running permutation importance, results are as follows. <br>
+
+<img width="363" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/35752ee3-0fee-4d5d-8d3c-7fbb81a42d0b"> <br>
+
+word_count, word_plus_punc features emerge as top 2 features indicating that the impact on model performance is highest by changing these two features. <br>
+
+
+
 
