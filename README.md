@@ -73,9 +73,17 @@ Standard scaling all the features before modeling to normalize ranges of all the
 After applying dimensionality reduction techniques like PCA and SVD to project embeddings to lower dimensional space explaining 95% of original variance, there doesnt seem to be any improvement in performance metric. 
 
 ## Model Architecture: 
-Generated a model architecture using 3 hidden layers and an output layer 
+Generated a model architecture using 3 hidden layers and an output layer. <br>
+Added Batch Normalization layers to ensure that network trains faster and to ensure stable learning during the model training. <br>
+Adding dropout layers helped avoid overfitting by randomly excluding some nodes at each training run, thereby introducing randomness and hence improving the network's generalization on new data. <br>
 
+Model is trained with Early Stopping Callback to stop training the network when validation accuracy doesnt seem to improve even after 20 training epochs. <br>
 
+Upon fitting the model, the training process stopped after 50 iterations when test f1-score reached 0.75. 
 
+## Learning Curves for Loss and Accuracy
+
+<div align="center"><img width="335" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/62202e2a-1ef5-4981-b194-0dd0a59015c8"> 
+<img width="331" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/016c97a2-b00e-4d25-aa51-d5dacf9e5516"></div> <br>
 
 
