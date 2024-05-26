@@ -16,7 +16,7 @@ e. ind : indicator flag for identifying AI generated text. Target variable for o
 ## Exploratory Data Analysis:
 
 **1. Distribution of Mean and Standard deviation of 768D embeddings:** <br>
-<img width="518" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/fef09778-1a8a-4f57-86a5-37290f54aa2a"></div> <br>
+<div align="center"><img width="518" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/fef09778-1a8a-4f57-86a5-37290f54aa2a"></div> <br>
 
 Mean of embedding features is at 0 and standard deviation is centered around 0.5
 
