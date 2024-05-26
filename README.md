@@ -41,7 +41,7 @@ Punctuation count used by Humans are widely distributed than that of AI generate
 
 We can utilzie PCA to reduce 768 dimensional vector to top 2 principal components that can explain almost 25% of variance in the actual data and then visualize these principal components for Human vs AI generated texts. <br>
 
-<img width="488" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/8b005354-60bd-4319-8870-a154a6d39644"> <br>
+<div align="center"><img width="488" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/8b005354-60bd-4319-8870-a154a6d39644"></div> <br>
 
 Data points for both the classes are mostly overlapping and there is no clear seperation between both the classes. However, this is expected, as top 2 principal components alone would not be sufficient enough for the classification model to be able to clearly distibguish between both the classes. <br>
 
@@ -50,7 +50,7 @@ Data points for both the classes are mostly overlapping and there is no clear se
 
 Using t-SNE to visualize 768 dimensional embeddings in 2 dimensions for both the classes. <br>
 
-<img width="483" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/d50db5ed-cbfb-4465-ab58-594994ddef20"> <br>
+<div align="center"><img width="483" alt="image" src="https://github.com/mngeethasree/AI_Text_Detection/assets/68059811/d50db5ed-cbfb-4465-ab58-594994ddef20"></div> <br>
 
 ## Feature Engineering:
 
